@@ -5,13 +5,13 @@ permalink: docs/hooks-intro.html
 next: hooks-overview.html
 ---
 
-*Hooks* are a new addition in React 16.8. They let you use state and other React features without writing a class.
+*Hooks* 是React16.8中的增加的特性。它使你在class之外使用state和其他React特性。
 
 ```js{4,5}
 import React, { useState } from 'react';
 
 function Example() {
-  // Declare a new state variable, which we'll call "count"
+  // 声明一个新的叫做“count”的state变量
   const [count, setCount] = useState(0);
 
   return (
