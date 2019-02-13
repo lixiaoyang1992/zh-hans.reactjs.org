@@ -5,7 +5,7 @@ permalink: docs/hooks-intro.html
 next: hooks-overview.html
 ---
 
-*Hooks* 是React16.8中的增加的特性。它使你在class之外使用state和其他React特性。
+*Hooks* 是 React 16.8 中的增加的特性。它使你在class之外使用state和其他React特性。
 
 ```js{4,5}
 import React, { useState } from 'react';
@@ -25,7 +25,7 @@ function Example() {
 }
 ```
 
-This new function `useState` is the first "Hook" we'll learn about, but this example is just a teaser. Don't worry if it doesn't make sense yet!
+这个叫做 `useState` 的新函数是我们学习的第一个 “Hooks”，但这个例子只是一个开场戏。如果现在不理解，不必担心。
 
 **You can start learning Hooks [on the next page](/docs/hooks-overview.html).** On this page, we'll continue by explaining why we're adding Hooks to React and how they can help you write great applications.
 
