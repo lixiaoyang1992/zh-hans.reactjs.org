@@ -1,11 +1,11 @@
 ---
 id: hooks-intro
-title: Introducing Hooks
+title: Hooks 简介
 permalink: docs/hooks-intro.html
 next: hooks-overview.html
 ---
 
-*Hooks* 是 React 16.8 中的增加的特性。它使你在class之外使用state和其他React特性。
+*Hooks*是React 16.8中的增加的特性。它使你在class之外使用state和其他React特性。
 
 ```js{4,5}
 import React, { useState } from 'react';
@@ -25,37 +25,37 @@ function Example() {
 }
 ```
 
-这个叫做 `useState` 的新函数是我们学习的第一个 “Hooks”，但这个例子只是一个开场戏。如果现在不理解，不必担心。
+这个叫做`useState`的新函数是我们学习的第一个“Hooks”，这个例子只是一个开场戏。如果你现在还一头雾水，不必担心。
 
-**You can start learning Hooks [on the next page](/docs/hooks-overview.html).** On this page, we'll continue by explaining why we're adding Hooks to React and how they can help you write great applications.
+**你可以在[下一页](/docs/hooks-overview.html)开始学习Hooks 。** 在这一页，我们将继续解释我们为什么在React中加入Hooks，以及它将如何帮助你写出更好的应用。
 
->Note
+>注意
 >
->React 16.8.0 is the first release to support Hooks. When upgrading, don't forget to update all packages, including React DOM. React Native will support Hooks in the next stable release.
+>React 16.8.0是第一个支持Hooks的版本。升级时，请升级所有的package，包括React DOM。React Native将在下一个稳定版本中支持Hooks。
 
-## Video Introduction {#video-introduction}
+## 视频介绍 {#video-introduction}
 
-At React Conf 2018, Sophie Alpert and Dan Abramov introduced Hooks, followed by Ryan Florence demonstrating how to refactor an application to use them. Watch the video here:
+在React Conf 2018，Sophie Alpert 和 Dan Abramov 介绍了Hooks, 接下来 Ryan Florence 示范了如何使用它们重构一个应用. 你可以在这里看到这个视频：
 
 <br>
 
 <iframe width="650" height="366" src="//www.youtube.com/embed/dpw9EHDh2bM" frameborder="0" allowfullscreen></iframe>
 
-## No Breaking Changes {#no-breaking-changes}
+## 没有破坏性改动 {#no-breaking-changes}
 
-Before we continue, note that Hooks are:
+在我们继续之前，请记住以下几点关于Hooks：
 
-* **Completely opt-in.** You can try Hooks in a few components without rewriting any existing code. But you don't have to learn or use Hooks right now if you don't want to.
-* **100% backwards-compatible.** Hooks don't contain any breaking changes.
-* **Available now.** Hooks are now available with the release of v16.8.0.
+* **完全可选。** 你无需重写任何已有代码就可以在一些组件中尝试Hooks。但是如果你不想，你不必现在就去学习或使用Hooks。
+* **100%向后兼容。** Hooks不包含任何破坏性改动。
+* **现在可用。** Hooks在v16.8.0中已实装。
 
-**There are no plans to remove classes from React.** You can read more about the gradual adoption strategy for Hooks in the [bottom section](#gradual-adoption-strategy) of this page.
+**没有计划从React中移除classes。** You can read more about the gradual adoption strategy for Hooks in the [bottom section](#gradual-adoption-strategy) of this page.
 
-**Hooks don't replace your knowledge of React concepts.** Instead, Hooks provide a more direct API to the React concepts you already know: props, state, context, refs, and lifecycle. As we will show later, Hooks also offer a new powerful way to combine them.
+**Hooks不会影响你对React的理解。** Instead, Hooks provide a more direct API to the React concepts you already know: props, state, context, refs, and lifecycle. As we will show later, Hooks also offer a new powerful way to combine them.
 
-**If you just want to start learning Hooks, feel free to [jump directly to the next page!](/docs/hooks-overview.html)** You can also keep reading this page to learn more about why we're adding Hooks, and how we're going to start using them without rewriting our applications.
+**如果你只想开始学习Hooks，你可以[直接跳到下一页!](/docs/hooks-overview.html)** You can also keep reading this page to learn more about why we're adding Hooks, and how we're going to start using them without rewriting our applications.
 
-## Motivation {#motivation}
+## 动机 {#motivation}
 
 Hooks solve a wide variety of seemingly unconnected problems in React that we've encountered over five years of writing and maintaining tens of thousands of components. Whether you're learning React, use it daily, or even prefer a different library with a similar component model, you might recognize some of these problems.
 
@@ -85,13 +85,13 @@ Additionally, React has been out for about five years, and we want to make sure 
 
 To solve these problems, **Hooks let you use more of React's features without classes.** Conceptually, React components have always been closer to functions. Hooks embrace functions, but without sacrificing the practical spirit of React. Hooks provide access to imperative escape hatches and don't require you to learn complex functional or reactive programming techniques.
 
->Examples
+>示例
 >
->[Hooks at a Glance](/docs/hooks-overview.html) is a good place to start learning Hooks.
+>[Hooks 一瞥](/docs/hooks-overview.html) is a good place to start learning Hooks.
 
-## Gradual Adoption Strategy {#gradual-adoption-strategy}
+## 渐进策略 {#gradual-adoption-strategy}
 
->**TLDR: There are no plans to remove classes from React.**
+>**太长不看: 没有计划从React中移除classes。**
 
 We know that React developers are focused on shipping products and don't have time to look into every new API that's being released. Hooks are very new, and it might be better to wait for more examples and tutorials before considering learning or adopting them.
 
@@ -103,10 +103,10 @@ Finally, there is no rush to migrate to Hooks. We recommend avoiding any "big re
 
 We intend for Hooks to cover all existing use cases for classes, but **we will keep supporting class components for the foreseeable future.** At Facebook, we have tens of thousands of components written as classes, and we have absolutely no plans to rewrite them. Instead, we are starting to use Hooks in the new code side by side with classes.
 
-## Frequently Asked Questions {#frequently-asked-questions}
+## 常见问题 {#frequently-asked-questions}
 
-We've prepared a [Hooks FAQ page](/docs/hooks-faq.html) that answers the most common questions about Hooks.
+我们准备了一个[Hooks 常见问题页面](/docs/hooks-faq.html)来解答最常见的关于Hooks的问题。
 
-## Next Steps {#next-steps}
+## 下一步 {#next-steps}
 
-By the end of this page, you should have a rough idea of what problems Hooks are solving, but many details are probably unclear. Don't worry! **Let's now go to [the next page](/docs/hooks-overview.html) where we start learning about Hooks by example.**
+在这一页的最后，你应该对Hooks能解决什么问题有了粗略的理解，但可能还有许多细节不清楚。不要担心！**让我们去[下一页](/docs/hooks-overview.html)通过例子学习Hooks。**
