@@ -31,7 +31,7 @@ function Example() {
 
 >注意
 >
->React 16.8.0是第一个支持Hooks的版本。升级时，请升级所有的package，包括React DOM。React Native将在下一个稳定版本中支持Hooks。
+>React 16.8.0是第一个支持Hooks的版本。升级时请升级所有的package，包括React DOM。React Native将在下一个稳定版本中支持Hooks。
 
 ## 视频介绍 {#video-introduction}
 
@@ -49,11 +49,11 @@ function Example() {
 * **100%向后兼容。** Hooks不包含任何破坏性改动。
 * **现在可用。** Hooks在v16.8.0中已实装。
 
-**没有计划从React中移除classes。** You can read more about the gradual adoption strategy for Hooks in the [bottom section](#gradual-adoption-strategy) of this page.
+**没有计划从React中移除classes。** 你可以在本页的[底部部分](#gradual-adoption-strategy)读到更多关于Hooks的渐进策略。
 
-**Hooks不会影响你对React的理解。** Instead, Hooks provide a more direct API to the React concepts you already know: props, state, context, refs, and lifecycle. As we will show later, Hooks also offer a new powerful way to combine them.
+**Hooks不会影响你对React的理解。** 恰恰相反，Hooks提供更直接的API去使用你了解的React概念: props, state, context, refs, 和 lifecycle。我们将稍后展示，Hooks也提供了一种更强大的方式来组合他们。
 
-**如果你只想开始学习Hooks，你可以[直接跳到下一页!](/docs/hooks-overview.html)** You can also keep reading this page to learn more about why we're adding Hooks, and how we're going to start using them without rewriting our applications.
+**如果你只想开始学习Hooks，你可以[直接跳到下一页!](/docs/hooks-overview.html)** 你也可以继续阅读这一页来了解为什么我们要添加Hooks，以及我们将如何在不重写应用的情况下使用他们。
 
 ## 动机 {#motivation}
 
@@ -87,7 +87,7 @@ To solve these problems, **Hooks let you use more of React's features without cl
 
 >示例
 >
->[Hooks 一瞥](/docs/hooks-overview.html) is a good place to start learning Hooks.
+>[Hooks一瞥](/docs/hooks-overview.html) is a good place to start learning Hooks.
 
 ## 渐进策略 {#gradual-adoption-strategy}
 
